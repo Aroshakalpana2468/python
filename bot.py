@@ -105,11 +105,6 @@ def command3(bot, message):
     
 @bot.on_message(filters.command('photo1'))
 def command3(bot, message):
-    
-   
-    
-    
-    
 
 @bot.on_message(filters.text)
 def delete_text(bot, message):
