@@ -18,6 +18,9 @@ START_MESSAGE_BUTTONS = [
     [
         InlineKeyboardButton('GROUP2', url= 'https://t.me/slfreefire23'),
         InlineKeyboardButton('GROUP3', url= 'https://t.me/SL_FREE_FIRE')   
+    ],
+    [
+        InlineKeyboardButton('MY MASTER', url= 'BUDDY3_FF')
     ]
 
 ]
@@ -97,11 +100,13 @@ def command3(bot, message):
     bot.send_photo(message.chat.id, "https://images.app.goo.gl/1mD9Rti13CQosAZXA")
     bot.send_photo(message.chat.id, "https://images.app.goo.gl/shMpXiY6hz2ARpP9A")
     bot.send_photo(message.chat.id, "https://images.app.goo.gl/i6HTzCEyCWcS5e947")
+    bot.send_photo(message.chat.id, "http://imgur.com/gallery/YUJYQ")
+    bot.send_photo(message.chat.id, "https://images.app.goo.gl/6jUcGMQPxS3HKxTd7")
     
 @bot.on_message(filters.command('photo1'))
 def command3(bot, message):
-     bot.send_photo(message.chat.id, "http://imgur.com/gallery/YUJYQ")
-     bot.send_photo(message.chat.id, "https://images.app.goo.gl/6jUcGMQPxS3HKxTd7")
+    
+   
     
     
     
