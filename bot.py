@@ -75,8 +75,10 @@ def reply_to_thnx(bot, message):
 def command1(bot, message):
     message.reply_text("This is test bot's help section.")
     
-id = m.from_user.id
-await m.reply(f"Your id is {id}")
+@bot.on_message(from_user.id("id"))
+def reply(f"Your id is {id}"):
+    message.reply_id("id")
+
     
 #echobot
 @bot.on_message(filters.text)
@@ -94,8 +96,6 @@ def welcomebot(client, message):
 #send_photo
 @bot.on_message(filters.command('photo'))
 def command3(bot, message):
-    bot.send_photo(message.chat.id, "http://imgur.com/gallery/YUJYQ")
-    bot.send_photo(message.chat.id, "https://images.app.goo.gl/6jUcGMQPxS3HKxTd7")
     bot.send_photo(message.chat.id, "https://images.app.goo.gl/149z553sqXVekdJY9")
     bot.send_photo(message.chat.id, "https://images.app.goo.gl/1qwF6ekMpvtfm9WU7")
     bot.send_photo(message.chat.id, "https://images.app.goo.gl/8S7ZW5XLshWGf1ch8")
@@ -107,6 +107,13 @@ def command3(bot, message):
     bot.send_photo(message.chat.id, "https://images.app.goo.gl/1mD9Rti13CQosAZXA")
     bot.send_photo(message.chat.id, "https://images.app.goo.gl/shMpXiY6hz2ARpP9A")
     bot.send_photo(message.chat.id, "https://images.app.goo.gl/i6HTzCEyCWcS5e947")
+    
+@bot.on_message(filters.command('photo1'))
+def command3(bot, message):
+     bot.send_photo(message.chat.id, "http://imgur.com/gallery/YUJYQ")
+     bot.send_photo(message.chat.id, "https://images.app.goo.gl/6jUcGMQPxS3HKxTd7")
+    
+    
     
 
 @bot.on_message(filters.text)
