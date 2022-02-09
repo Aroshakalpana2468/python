@@ -74,6 +74,11 @@ def reply_to_thnx(bot, message):
 @bot.on_message(filters.command('help'))
 def command1(bot, message):
     message.reply_text("This is test bot's help section.")
+    
+#echobot
+@bot.on_message(filters.text)
+def echobot(client, message):
+    message.reply_text(message.text)
 
 #welcomebot
 GROUP = "ak_live_stream_2"
