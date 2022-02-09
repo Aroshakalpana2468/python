@@ -75,11 +75,6 @@ def reply_to_thnx(bot, message):
 def command1(bot, message):
     message.reply_text("This is test bot's help section.")
     
-@bot.on_message(from_user.id("id"))
-def reply(f"Your id is {id}"):
-    message.reply_id("id")
-
-    
 #echobot
 @bot.on_message(filters.text)
 def echobot(client, message):
