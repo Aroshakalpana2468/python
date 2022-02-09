@@ -75,11 +75,6 @@ def reply_to_thnx(bot, message):
 def command1(bot, message):
     message.reply_text("This is test bot's help section.")
     
-#echobot
-@bot.on_message(filters.text)
-def echobot(client, message):
-    message.reply_text(message.text)
-
 #welcomebot
 GROUP = "ak_live_stream_2"
 WELCOME_MESSAGE = "Hello, welcome to group chat!"
